@@ -1,4 +1,6 @@
 import Nav from "../components/nav";
+import About from "./About";
+import UpperNav from "./Header";
 import MainPage from "./MainPage";
 
 export default function Home() {
@@ -7,6 +9,8 @@ export default function Home() {
       <div className="min-h-screen flex">
         <Nav></Nav>
         <MainPage></MainPage>
+        {/* <UpperNav></UpperNav> */}
+        {/* <About></About> */}
       </div>
     </div>
   );

@@ -1,7 +1,12 @@
-import ThemeSwitch from "../components/ThemeSwitcher";
+import About from "./About"
+import { default as Header, default as UpperNav } from "./Header"
 
-export default function Main() {
+export default function MainPage() {
     return <main className="grow overflow-hidden px-6">
-        <ThemeSwitch className="w-40 h-40"></ThemeSwitch>
+        <div className="w-full h-full max-w-[1072px] mx-auto flex flex-col ">
+            <Header></Header>
+            <About></About>
+            {/* <MainSection></MainSection> */}
+        </div>
     </main>
 }
