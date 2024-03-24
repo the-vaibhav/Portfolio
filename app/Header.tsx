@@ -1,3 +1,5 @@
+import { CatIcon, DogIcon, FootprintsIcon, PawPrint, PawPrintIcon } from "lucide-react";
+import { GiPanda } from "react-icons/gi";
 import ThemeSwitch from "../components/ThemeSwitcher";
 /* 
 export default function Header() {
@@ -26,8 +28,9 @@ export default function Header() {
         <div className="flex items-center justify-between h-16 before:block" >
             <div className="grow flex justify-between md:justify-end space-x-4">
                 <div className="flex flex-col justify-center ml-3" >
-                    <a href="/" className="">
-                        <h1>Vaibhav Mhaske</h1>
+                    <a href="/" className="flex flex-row">
+                        <DogIcon className="mr-1"></DogIcon>
+                        <h1 className=" text-gray-800 dark:text-white font-sans font-bold"> Vaibhav Mhaske</h1>
                     </a>
                 </div>
                 <div>
@@ -35,5 +38,5 @@ export default function Header() {
                 </div>
             </div>
         </div>
-    </header>
+    </header >
 }
