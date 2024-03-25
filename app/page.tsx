@@ -9,7 +9,6 @@ export default function Home() {
       <div className="min-h-screen flex">
         <Nav></Nav>
         <MainPage></MainPage>
-        {/* <UpperNav></UpperNav> */}
         {/* <About></About> */}
       </div>
     </div>

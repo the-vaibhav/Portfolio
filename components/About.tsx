@@ -1,5 +1,5 @@
+import Description from "./Description";
 import "./styles/style.css";
-import Work from "./Work";
 
 export default function About() {
     return <div className="max-w-[700px]">
@@ -15,6 +15,6 @@ export default function About() {
             <div className="home__img md:w-1/2  mt-4 md:mt-0">
             </div>
         </div>
-        <Work></Work>
+        <Description></Description>
     </div>
 }

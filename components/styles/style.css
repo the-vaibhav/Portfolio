@@ -16,11 +16,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    box-shadow: inset 0 0 0 9px rgb(255, 255, 255 / 30%);
+    box-shadow: inset 0 0 0 3px rgb(255 255 255 / 30%);
     order: 1;
     justify-self: center;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     animation: profile_animate 8s ease-in-out infinite 1s;
 
 }
