@@ -30,7 +30,7 @@ export default function ThemeSwitch({ className }: ThemeSwitchProp) {
     if (resolvedTheme === 'dark') {
         return <FiSun className={className} onClick={() => setTheme('light')} />
     } else {
-        return <FiMoon className={className} onClick={() => setTheme('dark')} />
+        return <FiMoon fill='white' className={className} onClick={() => setTheme('dark')} />
     }
 
 }

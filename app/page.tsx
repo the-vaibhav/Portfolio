@@ -1,6 +1,6 @@
+import About from "../components/About";
+import UpperNav from "../components/Header";
 import Nav from "../components/nav";
-import About from "./About";
-import UpperNav from "./Header";
 import MainPage from "./MainPage";
 
 export default function Home() {

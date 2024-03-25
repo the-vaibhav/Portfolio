@@ -1,5 +1,5 @@
-import About from "./About"
-import { default as Header, default as UpperNav } from "./Header"
+import About from "../components/About"
+import { default as Header, default as UpperNav } from "../components/Header"
 
 export default function MainPage() {
     return <main className="grow overflow-hidden px-6">
