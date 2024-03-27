@@ -1,14 +1,10 @@
-import { Shiba } from "../components/shiba";
 import Description from "./Description";
 import "./styles/style.css";
 
 
 export default function About() {
     return <div className="max-w-[700px]">
-        <div className='block justify-center items-center w-full h-[380px] -mt-20 overflow-hidden'>
-            <Shiba></Shiba>
-        </div>
-        <div className="pt-8 -mt-[135px]">
+        <div className="pt-8">
             <p className="border rounded-lg text-center  text-black bg-white bg-opacity-40 dark:text-white dark:bg-white dark:bg-opacity-10 p-3 mb-6">Hello, I&apos;m a Software Developer Based in India</p>
         </div>
         <div className="flex flex-col md:flex-row items-center">

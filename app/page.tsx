@@ -1,5 +1,3 @@
-import About from "../components/About";
-import UpperNav from "../components/Header";
 import Nav from "../components/nav";
 import MainPage from "./MainPage";
 
@@ -9,7 +7,6 @@ export default function Home() {
       <div className="min-h-screen flex">
         <Nav></Nav>
         <MainPage></MainPage>
-        {/* <About></About> */}
       </div>
     </div>
   );
