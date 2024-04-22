@@ -3,7 +3,7 @@ import ThemeSwitch from "./ThemeSwitcher";
 
 export default function Header() {
     return <header>
-        <div className="flex items-center justify-between h-16 before:block" >
+        <div className="flex relative z-20 items-center justify-between h-16 before:block" >
             <div className=" flex-grow flex justify-between md:justify-end space-x-4">
                 <div className="flex flex-col justify-center " >
                     <a href="/" className="flex flex-row">
