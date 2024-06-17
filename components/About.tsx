@@ -1,7 +1,6 @@
 import Description from "./Description";
 import "./styles/style.css";
 
-
 export default function About() {
     return <div className="max-w-[700px] relative z-20">
         <div className="pt-8 -mt-[135px]">
