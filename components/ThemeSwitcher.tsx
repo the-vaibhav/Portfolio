@@ -34,4 +34,3 @@ export default function ThemeSwitch({ className }: ThemeSwitchProp) {
     }
 
 }
-// nothing just doing some typing because i got bored dont have motivation to do anything.
