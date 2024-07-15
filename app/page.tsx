@@ -1,5 +1,5 @@
 import MainPage from "../components/MainPage";
-import Nav from "../components/Nav";
+import Nav from "../components/Navbar";
 
 export default function Home() {
   return (
