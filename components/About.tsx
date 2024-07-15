@@ -1,6 +1,6 @@
 import { GithubIcon, InstagramIcon, LinkedinIcon, MailIcon } from "lucide-react";
 import { BsTwitterX } from "react-icons/bs";
-import "../styles/ProfilePic.css";
+import "../styles/profilePic.css";
 
 export default function About() {
     return <div className="max-w-[700px] relative z-20">
