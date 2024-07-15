@@ -1,5 +1,5 @@
 "use client"
-import "./styles/style.css";
+import "../styles/globals.css";
 
 const Nav = () => {
     return (

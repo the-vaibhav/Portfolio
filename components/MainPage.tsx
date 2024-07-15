@@ -1,6 +1,6 @@
-import About from "../components/About";
-import { default as Header } from "../components/Header";
-import { Shiba } from "../components/shiba";
+import About from "./About";
+import { default as Header } from "./Header";
+import { Shiba } from "./shiba";
 
 
 export default function MainPage() {

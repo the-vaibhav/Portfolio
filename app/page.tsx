@@ -1,5 +1,5 @@
-import Nav from "../components/nav";
-import MainPage from "./MainPage";
+import MainPage from "../components/MainPage";
+import Nav from "../components/Nav";
 
 export default function Home() {
   return (
