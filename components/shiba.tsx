@@ -15,7 +15,7 @@ extend({ GLTFLoader, DRACOLoader });
 function MeshComponent() {
     const gltf = useGLTF('./dog.glb');
     const mesh = useRef<THREE.Mesh>(null!);
-    const { camera, scene } = useThree();
+    const { camera } = useThree();
     const frame = useRef(0);
     const initialCameraPosition = new THREE.Vector3(
         20 * Math.sin(0.2 * Math.PI),

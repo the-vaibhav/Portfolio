@@ -1,8 +1,8 @@
 import "../styles/profilePic.css";
 
 export default function About() {
-    return <div className="max-w-[700px] relative z-20">
-        <div className="pt-8 -mt-[135px]">
+    return <div className="static max-w-[700px] z-20">
+        <div className="pt-8">
             <p className="border rounded-lg text-center  text-black bg-white bg-opacity-40 dark:text-white dark:bg-white dark:bg-opacity-10 p-3 mb-6">Hello, I&apos;m a Software Developer Based in India</p>
         </div>
         <div className="flex flex-col md:flex-row items-center">
