@@ -1,4 +1,5 @@
 import "../styles/profilePic.css";
+import TextDecodeAnimation from "./DecodeText";
 
 export default function About() {
     return <div className="static max-w-[700px] z-20">
@@ -7,9 +8,8 @@ export default function About() {
         </div>
         <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2">
-                <h2 className="font-bold text-4xl">Vaibhav Mhaske</h2>
-                <p>Digital Craftman ( Developer / Gamer )
-                </p>
+                <TextDecodeAnimation hindiText="वैभव म्हस्के" englishText="Vaibhav Mhaske" style="text-2xl text-center font-semibold tracking-wider transition-all duration-300 ease-in-out" />
+                <p className="text-center">Digital Craftman ( Developer / Gamer )</p>
             </div>
             <div className="home__img md:w-1/2  mt-4 md:mt-0">
             </div>
