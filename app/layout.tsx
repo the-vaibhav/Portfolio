@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Alex_Brush, Inter, M_PLUS_Rounded_1c } from "next/font/google";
 import { Providers } from "../components/ThemeProvider";
 import "../styles/globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const myFont = M_PLUS_Rounded_1c({ weight: ["400"], subsets: ["latin"], variable: "--my-font-family" });
 
 export const metadata: Metadata = {
   title: "Vaibhav Mhaske | Developer",
@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className={myFont.className}>
         <Providers>
           {children}
         </Providers>

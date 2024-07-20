@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  font-family: var(--my-font-family), sans-serif;
+}
+
 @layer base {
   :root {
     --background: 34 41% 90%;
