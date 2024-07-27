@@ -32,7 +32,7 @@ const TextDecodeAnimation: React.FC<TextProp> = ({ hindiText, englishText, style
 
         intervalId = setInterval(animateText, interval);
         return () => clearInterval(intervalId);
-    }, []);
+    }, [englishText, hindiText]);
 
     return (
         <div className={style}>{displayedText}</div>

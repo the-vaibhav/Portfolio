@@ -16,7 +16,7 @@ export default function About() {
         </div>
         <div className="mt-5">
             <div>
-                <p>I'm a software engineer with a passion for creating seamless, user-friendly experiences. I thrive on turning complex problems into simple, elegant solutions and am always eager to tackle new challenges. Outside of coding, you'll find me exploring tech, following developments in science, or enjoying manga and manhwa. Let's connect and make something amazing together!</p>
+                <p>I&apos;m a software engineer with a passion for creating seamless, user-friendly experiences. I thrive on turning complex problems into simple, elegant solutions and am always eager to tackle new challenges. Outside of coding, you&apos;ll find me exploring tech, following developments in science, or enjoying manga and manhwa. Let&apos;s connect and make something amazing together!</p>
             </div>
             <li className="flex flex-wrap gap-10 mt-[37px] text-slate-500 dark:text-slate-400">
                 <a href="https://github.com/the-patil" className="flex gap-2 items-center hover:scale-125">
