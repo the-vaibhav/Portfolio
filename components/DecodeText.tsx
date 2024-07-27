@@ -12,7 +12,7 @@ const TextDecodeAnimation: React.FC<TextProp> = ({ hindiText, englishText, style
     const [displayedText, setDisplayedText] = useState(hindiText);
 
     useEffect(() => {
-        const interval = 100; // Interval between character changes
+        const interval = 200; // Interval between character changes
         let currentIndex = 0;
         let intervalId: NodeJS.Timeout;
 

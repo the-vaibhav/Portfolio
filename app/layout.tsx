@@ -3,7 +3,7 @@ import { Alex_Brush, Inter, M_PLUS_Rounded_1c } from "next/font/google";
 import { Providers } from "../components/ThemeProvider";
 import "../styles/globals.css";
 
-const myFont = M_PLUS_Rounded_1c({ weight: ["400"], subsets: ["latin"], variable: "--my-font-family" });
+const myFont = M_PLUS_Rounded_1c({ weight: ["400", "700", "800"], subsets: ["latin"], variable: "--my-font-family" });
 
 export const metadata: Metadata = {
   title: "Vaibhav Mhaske | Developer",
