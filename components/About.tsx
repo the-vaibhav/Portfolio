@@ -8,7 +8,7 @@ export default function About() {
         </div>
         <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2">
-                <TextDecodeAnimation hindiText="वैभव म्हस्के" englishText="Vaibhav Mhaske" style="text-4xl text-center font-bold tracking-wide" />
+                <TextDecodeAnimation time={150} hindiText="वैभव म्हस्के" englishText="Vaibhav Mhaske" style="text-4xl text-center font-bold tracking-wide" />
                 <p className="text-center">Digital Craftman ( Developer / Gamer )</p>
             </div>
             <div className="home__img w-[120px] h-[120px] md:w-[150px] md:h-[150px] mt-4 md:mt-0">

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Alex_Brush, Inter, M_PLUS_Rounded_1c } from "next/font/google";
+import { M_PLUS_Rounded_1c } from "next/font/google";
 import { Providers } from "../components/ThemeProvider";
 import "../styles/globals.css";
 
