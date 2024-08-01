@@ -20,7 +20,7 @@ export default function Resume() {
                                         </div>
                                         <img
                                             src="about_img.jpg"
-                                            alt="about-img"
+                                            alt="about_img"
                                             loading="lazy"
                                             decoding="async"
                                             className="order-1 md:order-2 max-w-full h-96 mx-auto block bg-transparent "
