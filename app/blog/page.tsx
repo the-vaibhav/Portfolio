@@ -1,7 +1,7 @@
 import Header from "../../components/Header";
 import Nav from "../../components/Navbar";
 
-export default function projects() {
+export default function Blogs() {
     return <div className="max-w-7xl mx-auto">
         <div className="min-h-screen flex">
             <Nav></Nav>

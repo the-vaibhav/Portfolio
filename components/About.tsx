@@ -11,7 +11,7 @@ export default function About() {
                 <TextDecodeAnimation time={150} hindiText="वैभव म्हस्के" englishText="Vaibhav Mhaske" style="text-4xl text-center font-bold tracking-wide" />
                 <p className="text-center">Digital Craftman ( Developer / Gamer )</p>
             </div>
-            <div className="home__img w-[120px] h-[120px] md:w-[150px] md:h-[150px] mt-4 md:mt-0">
+            <div className="home__img w-[120px] h-[120px] md:w-[150px] md:h-[150px] mt-5 md:mt-0">
             </div>
         </div>
         <div className="mt-3 md:mt-5">
