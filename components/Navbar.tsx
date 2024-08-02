@@ -7,7 +7,7 @@ export default function Nav() {
     const pathname = usePathname(); // Initialize usePathname
 
     // Function to determine if the link is active
-    const isActive = (href: string) => pathname === href ? 'text-sky-500 dark:text-sky-400' : 'text-slate-400 dark:text-slate-500';
+    const isActive = (href: string) => pathname === href ? 'text-sky-500 dark:text-sky-500' : 'text-slate-400 hover:text-slate-500 dark:hover:text-slate-400 dark:text-slate-500';
 
     return (
         <div className='fixed w-full md:sticky bottom-0 md:top-0 h-16 md:w-24 shrink-0 md:h-screen overflow-y-auto no-scrollbar z-50 backdrop-filter backdrop-blur-lg'>
