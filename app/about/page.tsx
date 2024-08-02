@@ -19,7 +19,7 @@ export default function Resume() {
                                             <p className="text-xl mt-4 md:text-left ">A passionate senior developer with a keen eye for design and a dedication to creating engaging, accessible, and user-centric experiences. With a strong foundation in front-end development, I specialize in technologies like React.js, TypeScript, and Tailwind CSS to build scalable, efficient, and visually appealing applications.</p>
                                         </div>
                                         <img
-                                            src="about_img.jpg"
+                                            src="../../styles/about_img.jpg"
                                             alt="about_img"
                                             loading="lazy"
                                             decoding="async"
