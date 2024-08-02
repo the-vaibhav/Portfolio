@@ -24,7 +24,7 @@ export default function Resume() {
                                             loading="lazy"
                                             decoding="async"
                                             className="order-1 md:order-2 md:-mt-14 max-w-full h-96 mx-auto block bg-transparent "
-                                            srcSet="about_img.jpg 1x, about_img.jpg 2x"
+                                            srcSet="About_img.jpg 1x, About_img.jpg 2x"
                                         />
                                     </div>
                                 </section>
