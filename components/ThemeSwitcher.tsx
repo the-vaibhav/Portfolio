@@ -2,18 +2,14 @@
 
 import { useTheme } from 'next-themes';
 
-type ThemeSwitchProp = {
-    className: string
-}
-
-export default function ThemeSwitch({ className }: ThemeSwitchProp) {
+export default function ThemeSwitch() {
     const { theme, setTheme } = useTheme();
 
     return (
         <button
             aria-label="Toggle Dark Mode"
             type="button"
-            className={`w-10 h-10 p-3 rounded focus:outline-none ${className}`}
+            className="group rounded-full bg-orange-100 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition dark:bg-inherit  dark:ring-teal-500/50 dark:hover:ring-white/20"
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
         >
             {theme === "dark" ? (
