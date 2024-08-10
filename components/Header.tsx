@@ -11,7 +11,7 @@ export default function Header() {
                     </a>
                 </div>
                 <div>
-                    <ThemeSwitch className="border dark:text-black  text-white rounded-lg p-2 dark:bg-orange-300 dark:hover:bg-orange-500 bg-purple-500 hover:bg-purple-600 w-10 h-10"></ThemeSwitch>
+                    <ThemeSwitch className="group rounded-2xl bg-white/90 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition dark:bg-zinc-900/90 dark:ring-teal-500/50 dark:hover:ring-white/20" ></ThemeSwitch>
                 </div>
             </div>
         </div>
