@@ -5,19 +5,19 @@ export function AnimatedTabs() {
     const TABS = [
         {
             label: 'Home',
-            icon: <Home className='h-5 w-5' />,
+            icon: <Home className='h-5 w-5 dark:stroke-white' />,
         },
         {
             label: 'About',
-            icon: <User className='h-5 w-5' />,
+            icon: <User className='h-5 w-5 dark:stroke-white' />,
         },
         {
             label: 'Services',
-            icon: <Settings className='h-5 w-5' />,
+            icon: <Settings className='h-5 w-5 dark:stroke-white' />,
         },
         {
             label: 'Contact',
-            icon: <PhoneCall className='h-5 w-5' />,
+            icon: <PhoneCall className='h-5 w-5 dark:stroke-white' />,
         },
     ];
 
@@ -26,7 +26,7 @@ export function AnimatedTabs() {
             <div className="flex items-center rounded-xl border border-zinc-950/10 backdrop-filter backdrop-blur-lg p-2 shadow-[rgba(142,140,152,0.2)_0px_0px_30px,rgba(219,216,224,0.2)_0px_0px_0px_1px] dark:shadow-[rgba(111,109,120,0.1)_0px_0px_30px,rgba(60,57,63,0.4)_0px_0px_0px_1px]">
                 <AnimatedBackground
                     defaultValue={TABS[0].label}
-                    className='rounded-lg bg-zinc-100'
+                    className='rounded-lg dark:bg-slate-700 '
                     transition={{
                         type: 'spring',
                         bounce: 0.2,
@@ -38,7 +38,7 @@ export function AnimatedTabs() {
                             key={tab.label}
                             data-id={tab.label}
                             type='button'
-                            className='inline-flex h-9 w-9 items-center justify-center text-zinc-500 transition-colors duration-100 focus-visible:outline-2 data-[checked=true]:text-zinc-950'
+                            className='inline-flex h-9 w-9 items-center justify-center text-zinc-500 transition-colors duration-100 focus-visible:outline-2'
                         >
                             {tab.icon}
                         </button>
