@@ -20,6 +20,8 @@ const config = {
     },
     extend: {
       colors: {
+        'custom-nav-gray': '#2D2B2E',
+        'custom-nav-white': '#E9DCD7',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
