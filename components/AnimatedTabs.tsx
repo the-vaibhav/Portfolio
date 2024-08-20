@@ -5,19 +5,19 @@ export function AnimatedTabs() {
     const TABS = [
         {
             label: 'Home',
-            icon: <Home className='h-5 w-5 dark:stroke-white' />,
+            icon: <Home className='h-5 w-5' />,
         },
         {
             label: 'About',
-            icon: <User className='h-5 w-5 dark:stroke-white' />,
+            icon: <User className='h-5 w-5' />,
         },
         {
             label: 'Services',
-            icon: <Settings className='h-5 w-5 dark:stroke-white' />,
+            icon: <Settings className='h-5 w-5' />,
         },
         {
             label: 'Contact',
-            icon: <PhoneCall className='h-5 w-5 dark:stroke-white' />,
+            icon: <PhoneCall className='h-5 w-5' />,
         },
     ];
 
@@ -38,7 +38,7 @@ export function AnimatedTabs() {
                             key={tab.label}
                             data-id={tab.label}
                             type='button'
-                            className='inline-flex h-9 w-9 items-center justify-center text-zinc-500 transition-colors duration-100 focus-visible:outline-2'
+                            className='inline-flex h-9 w-9 items-center justify-center text-white transition-colors duration-100 focus-visible:outline-2 data-[checked=true]:text-teal-600'
                         >
                             {tab.icon}
                         </button>
