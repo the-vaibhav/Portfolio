@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { M_PLUS_Rounded_1c } from "next/font/google";
+import Header from "../components/Header";
+import Nav from "../components/Navbar";
 import { Providers } from "../components/ThemeProvider";
 import "../styles/globals.css";
 
@@ -19,7 +21,17 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={myFont.className}>
         <Providers>
-          {children}
+          <div className="max-w-7xl mx-auto min-h-screen lg:flex lg:justify-center lg:items-center">
+            <div className="flex">
+              <Nav />
+              <main className="grow overflow-hidden px-6 mb-10 pb-10">
+                <div className="w-full h-full max-w-[1072px] mx-auto flex flex-col relative">
+                  <Header />
+                  {children}
+                </div>
+              </main>
+            </div>
+          </div>
         </Providers>
       </body>
     </html>
