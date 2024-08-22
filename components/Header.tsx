@@ -10,9 +10,6 @@ export default function Header() {
                         <h1 className="text-gray-800 dark:text-white text-lg text font-bold">Vaibhav Mhaske</h1>
                     </a>
                 </div>
-                <div>
-                    <ThemeSwitch></ThemeSwitch>
-                </div>
             </div>
         </div>
     </header>
