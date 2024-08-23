@@ -1,6 +1,8 @@
 "use client"
 import AnimatedBackground from '@/components/animated/animated-background';
+import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import ThemeSwitch from './ThemeSwitcher';
 
 export function AnimatedTabs() {
     const pathname = usePathname();
@@ -25,7 +27,7 @@ export function AnimatedTabs() {
                     }}
                 >
                     {TABS.map((tab) => (
-                        <a
+                        <Link
                             href={tab.href}
                             key={tab.label}
                             data-id={tab.label}
@@ -33,9 +35,10 @@ export function AnimatedTabs() {
                             className='inline-flex h-9 w-9 items-center justify-center text-slate-400 dark:text-slate-500 transition-colors duration-100 focus-visible:outline-2'
                         >
                             {tab.icon}
-                        </a>
+                        </Link>
                     ))}
                 </AnimatedBackground>
+                <ThemeSwitch />
             </div>
         </div>
     );

@@ -1,4 +1,5 @@
 "use client"
+import Link from 'next/link';
 import { usePathname } from 'next/navigation'; // Import usePathname from next/navigation
 import "../styles/globals.css";
 import ThemeSwitch from './ThemeSwitcher';
@@ -23,13 +24,13 @@ export default function Nav() {
                                 { href: '/projects', label: 'Projects', icon: <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path fillOpacity=".16" d="M1 4h18v10H1z"></path><path d="M8 3h4V2H8v1ZM6 3V0h8v3h6v12H0V3h6ZM2 5v8h16V5H2Zm14 13v-2h2v4H2v-4h2v2h12Z"></path></svg> },
                             ].map(({ href, label, icon }) => (
                                 <li key={href} className='relative md:py-2 group'>
-                                    <a className={`w-full h-6 flex items-center justify-center relative after:absolute after:w-0.5 after:right-0 after:top0 after:bottom-0 ${isActive(href)}`} href={href}>
+                                    <Link className={`w-full h-6 flex items-center justify-center relative after:absolute after:w-0.5 after:right-0 after:top0 after:bottom-0 ${isActive(href)}`} href={href}>
                                         <span className="sr-only">{label}</span>
                                         {icon}
                                         <span className="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 text-xs leading-none opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                             {label}
                                         </span>
-                                    </a>
+                                    </Link>
                                 </li>
                             ))}
                             <li className='relative md:py-2 group'>

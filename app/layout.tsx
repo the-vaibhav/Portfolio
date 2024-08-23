@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { M_PLUS_Rounded_1c } from "next/font/google";
+import { AnimatedTabs } from "../components/AnimatedTabs";
 import Header from "../components/Header";
 import Nav from "../components/Navbar";
 import { Providers } from "../components/ThemeProvider";
@@ -18,12 +19,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" >
       <body className={myFont.className}>
         <Providers>
           <div className="max-w-7xl mx-auto min-h-screen lg:flex lg:justify-center lg:items-center">
             <div className="flex">
-              <Nav />
+              {/* <Nav /> */}
+              <AnimatedTabs />
               <main className="grow overflow-hidden px-6 mb-10 pb-10">
                 <div className="w-full h-full max-w-[1072px] mx-auto flex flex-col relative">
                   <Header />

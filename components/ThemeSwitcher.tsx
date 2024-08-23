@@ -15,7 +15,7 @@ export default function ThemeSwitch() {
         <button
             aria-label="Toggle Dark Mode"
             type="button"
-            className="group rounded-full bg-inherit px-2  py-1 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition dark:bg-inherit  dark:ring-teal-500/50 dark:hover:ring-white/20"
+            className="group rounded-full bg-inherit px-2 py-1 ml-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition dark:bg-inherit  dark:ring-teal-500/50 dark:hover:ring-white/20"
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
         >
             {theme === "dark" ? (
