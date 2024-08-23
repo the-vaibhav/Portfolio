@@ -5,6 +5,7 @@
 html {
   font-family: var(--my-font-family);
   scrollbar-width: thin;
+  overflow-y: scroll;
 }
 
 /* Define the transition properties */

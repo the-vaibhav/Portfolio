@@ -2,6 +2,7 @@
 import AnimatedBackground from '@/components/animated/animated-background';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { div } from 'three/examples/jsm/nodes/Nodes.js';
 import ThemeSwitch from './ThemeSwitcher';
 
 export function AnimatedTabs() {
@@ -13,6 +14,8 @@ export function AnimatedTabs() {
         { href: '/blog', label: 'Blog', icon: <BlogIcon /> },
         { href: '/projects', label: 'Projects', icon: <ProjectsIcon /> },
     ];
+
+    const isActive = (href: string) => pathname === href ? 'text-teal-600 dark:text-teal-600' : 'text-slate-400 hover:text-slate-500 dark:hover:text-slate-400 dark:text-slate-500';
 
     return (
         <div className="fixed inset-x-0 bottom-0 z-[1000] mb-4 flex h-12 justify-center px-6">
@@ -32,15 +35,14 @@ export function AnimatedTabs() {
                             key={tab.label}
                             data-id={tab.label}
                             aria-label={tab.label} // Added for accessibility
-                            className='inline-flex h-9 w-9 items-center justify-center text-slate-400 dark:text-slate-500 transition-colors duration-100 focus-visible:outline-2'
-                        >
+                            className={`inline-flex h-9 w-9 items-center justify-center transition-colors duration-100 focus-visible:outline-2 ${isActive(tab.href)}`}>
                             {tab.icon}
                         </Link>
                     ))}
                 </AnimatedBackground>
                 <ThemeSwitch />
             </div>
-        </div>
+        </div >
     );
 }
 

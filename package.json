@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@nextui-org/spinner": "^2.0.25",
     "@react-three/drei": "^9.102.6",
     "@react-three/fiber": "^8.16.0",
     "@types/three": "^0.162.0",
