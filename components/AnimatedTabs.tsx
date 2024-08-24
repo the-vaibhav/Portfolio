@@ -35,7 +35,7 @@ export function AnimatedTabs() {
                     transition={{
                         type: 'spring',
                         bounce: 0.2,
-                        duration: 0.5,
+                        duration: 0.3,
                     }}
                 >
                     {TABS.map((tab) => (
