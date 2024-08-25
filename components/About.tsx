@@ -9,14 +9,14 @@ export default function About() {
         <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2">
                 <TextDecodeAnimation time={150} hindiText="वैभव म्हस्के" englishText="Vaibhav Mhaske" style="text-4xl text-center font-bold tracking-wide" />
-                <p className="text-center">Digital Craftman ( Developer / Gamer )</p>
+                <p className="text-center text-custom-text-gray dark:text-custom-text-lightgray">Digital Craftman ( Developer / Gamer )</p>
             </div>
             <div className="home__img w-[120px] h-[120px] md:w-[150px] md:h-[150px] mt-5 md:mt-0">
             </div>
         </div>
         <div className="mt-3 md:mt-5">
             <div>
-                <p>I&apos;m a software engineer with a passion for creating seamless, user-friendly experiences. I thrive on turning complex problems into simple, elegant solutions and am always eager to tackle new challenges. Outside of coding, you&apos;ll find me exploring tech, following developments in science, or enjoying manga and manhwa. Let&apos;s connect and make something amazing together!</p>
+                <p className="text-custom-text-gray dark:text-custom-text-lightgray">I&apos;m a software engineer with a passion for creating seamless, user-friendly experiences. I thrive on turning complex problems into simple, elegant solutions and am always eager to tackle new challenges. Outside of coding, you&apos;ll find me exploring tech, following developments in science, or enjoying manga and manhwa. Let&apos;s connect and make something amazing together!</p>
             </div>
             <li className="flex flex-wrap gap-10 mt-[20px] md:mt-[37px] text-slate-500 dark:text-slate-400">
                 <a href="https://github.com/the-vaibhav" target="_blank" rel="noopener noreferrer" className="flex gap-2 items-center hover:scale-125">

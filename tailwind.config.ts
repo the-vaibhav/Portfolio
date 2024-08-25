@@ -22,6 +22,8 @@ const config = {
       colors: {
         'custom-nav-gray': '#2D2B2E',
         'custom-nav-white': '#E9DCD7',
+        'custom-text-gray': '#55525D',
+        'custom-text-lightgray': '#C5C2CC',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

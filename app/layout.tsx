@@ -26,11 +26,10 @@ export default function RootLayout({
             <div className="flex">
               {/* <Nav /> */}
               <AnimatedTabs />
-              <main className="grow overflow-hidden px-6 mb-10 pb-10">
-                <div className="w-full h-full max-w-[1072px] mx-auto flex flex-col relative">
-                  <Header />
-                  {children}
-                </div>
+              <div className="pointer-events-none fixed left-0 top-0 z-50 h-12 w-full bg-neutral-200 to-transparent backdrop-blur-xl [-webkit-mask-image:linear-gradient(to_bottom,black,transparent)] dark:bg-neutral-900"></div>
+              <main className="flex flex-col relative mx-auto mb-14 w-full max-w-screen-sm px-4 pb-8 pt-2 dark:text-white">
+                <Header />
+                {children}
               </main>
             </div>
           </div>

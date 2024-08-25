@@ -58,7 +58,7 @@ export function AnimatedTabs() {
 // Icons can be moved to separate components for better readability
 function HomeIcon() {
     return (
-        <Tooltip.Provider>
+        <Tooltip.Provider delayDuration={0}>
             <Tooltip.Root>
                 <Tooltip.Trigger asChild>
                     <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="21" height="19">
@@ -67,7 +67,7 @@ function HomeIcon() {
                     </svg>
                 </Tooltip.Trigger>
                 <Tooltip.Portal>
-                    <Tooltip.Content className="TooltipContent" sideOffset={5}>
+                    <Tooltip.Content className="rounded-lg p-2 text-sm text-custom-text-gray dark:text-custom-text-lightgray leading-none bg-custom-nav-white dark:bg-custom-nav-gray shadow-lg select-none animate duration-400 ease-in-out transform-gpu opacity-100 z-10" sideOffset={18}>
                         Home
                     </Tooltip.Content>
                 </Tooltip.Portal>
@@ -79,7 +79,7 @@ function HomeIcon() {
 
 function AboutIcon() {
     return (
-        <Tooltip.Provider>
+        <Tooltip.Provider delayDuration={0}>
             <Tooltip.Root>
                 <Tooltip.Trigger asChild>
                     <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
@@ -88,7 +88,7 @@ function AboutIcon() {
                     </svg>
                 </Tooltip.Trigger>
                 <Tooltip.Portal>
-                    <Tooltip.Content className="TooltipContent" sideOffset={5}>
+                    <Tooltip.Content className="rounded-lg p-2 text-sm text-custom-text-gray dark:text-custom-text-lightgray leading-none bg-custom-nav-white dark:bg-custom-nav-gray shadow-lg select-none animate duration-400 ease-in-out transform-gpu opacity-100 z-10" sideOffset={18}>
                         About
                     </Tooltip.Content>
                 </Tooltip.Portal>
@@ -99,7 +99,7 @@ function AboutIcon() {
 
 function BlogIcon() {
     return (
-        <Tooltip.Provider>
+        <Tooltip.Provider delayDuration={0}>
             <Tooltip.Root>
                 <Tooltip.Trigger asChild>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="fill-current" width="28" height="28">
@@ -107,7 +107,7 @@ function BlogIcon() {
                     </svg>
                 </Tooltip.Trigger>
                 <Tooltip.Portal>
-                    <Tooltip.Content className="TooltipContent" sideOffset={5}>
+                    <Tooltip.Content className="rounded-lg p-2 text-sm text-custom-text-gray dark:text-custom-text-lightgray leading-none bg-custom-nav-white dark:bg-custom-nav-gray shadow-lg select-none animate duration-400 ease-in-out transform-gpu opacity-100 z-10" sideOffset={18}>
                         Blog
                     </Tooltip.Content>
                 </Tooltip.Portal>
@@ -118,7 +118,7 @@ function BlogIcon() {
 
 function ProjectsIcon() {
     return (
-        <Tooltip.Provider>
+        <Tooltip.Provider delayDuration={0}>
             <Tooltip.Root>
                 <Tooltip.Trigger asChild>
                     <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
@@ -127,7 +127,7 @@ function ProjectsIcon() {
                     </svg>
                 </Tooltip.Trigger>
                 <Tooltip.Portal>
-                    <Tooltip.Content className="TooltipContent" sideOffset={5}>
+                    <Tooltip.Content className="rounded-lg p-2 text-sm text-custom-text-gray dark:text-custom-text-lightgray leading-none bg-custom-nav-white dark:bg-custom-nav-gray shadow-lg select-none animate duration-400 ease-in-out transform-gpu opacity-100 z-10" sideOffset={18}>
                         Projects
                     </Tooltip.Content>
                 </Tooltip.Portal>
