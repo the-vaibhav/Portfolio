@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { M_PLUS_Rounded_1c } from "next/font/google";
-import { AnimatedTabs } from "../components/AnimatedTabs";
 import Header from "../components/Header";
+import { AnimatedTabs } from "../components/Nav";
 import Nav from "../components/Navbar";
 import { Providers } from "../components/ThemeProvider";
 import "../styles/globals.css";

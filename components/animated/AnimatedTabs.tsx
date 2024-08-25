@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React from 'react';
 import { div } from 'three/examples/jsm/nodes/Nodes.js';
-import ThemeSwitch from './ThemeSwitcher';
+import ThemeSwitch from '../ThemeSwitcher';
 
 export function AnimatedTabs() {
     const pathname = usePathname();
