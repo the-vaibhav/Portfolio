@@ -67,7 +67,7 @@ function HomeIcon() {
                     </svg>
                 </Tooltip.Trigger>
                 <Tooltip.Portal>
-                    <Tooltip.Content className="rounded-lg p-2 text-sm text-custom-text-gray dark:text-custom-text-lightgray leading-none bg-custom-nav-white dark:bg-custom-nav-gray shadow-lg select-none animate duration-400 ease-in-out transform-gpu opacity-100 z-10" sideOffset={18}>
+                    <Tooltip.Content className="rounded-lg p-2 text-sm text-custom-text-gray dark:text-custom-text-lightgray leading-none bg-custom-nav-white dark:bg-custom-nav-gray shadow-lg select-none animate duration-400 ease-in-out transform-gpu opacity-100 z-50" sideOffset={18}>
                         Home
                     </Tooltip.Content>
                 </Tooltip.Portal>
@@ -88,7 +88,7 @@ function AboutIcon() {
                     </svg>
                 </Tooltip.Trigger>
                 <Tooltip.Portal>
-                    <Tooltip.Content className="rounded-lg p-2 text-sm text-custom-text-gray dark:text-custom-text-lightgray leading-none bg-custom-nav-white dark:bg-custom-nav-gray shadow-lg select-none animate duration-400 ease-in-out transform-gpu opacity-100 z-10" sideOffset={18}>
+                    <Tooltip.Content className="rounded-lg p-2 text-sm text-custom-text-gray dark:text-custom-text-lightgray leading-none bg-custom-nav-white dark:bg-custom-nav-gray shadow-lg select-none animate duration-400 ease-in-out transform-gpu opacity-100 z-50" sideOffset={18}>
                         About
                     </Tooltip.Content>
                 </Tooltip.Portal>
@@ -107,7 +107,7 @@ function BlogIcon() {
                     </svg>
                 </Tooltip.Trigger>
                 <Tooltip.Portal>
-                    <Tooltip.Content className="rounded-lg p-2 text-sm text-custom-text-gray dark:text-custom-text-lightgray leading-none bg-custom-nav-white dark:bg-custom-nav-gray shadow-lg select-none animate duration-400 ease-in-out transform-gpu opacity-100 z-10" sideOffset={18}>
+                    <Tooltip.Content className="rounded-lg p-2 text-sm text-custom-text-gray dark:text-custom-text-lightgray leading-none bg-custom-nav-white dark:bg-custom-nav-gray shadow-lg select-none animate duration-400 ease-in-out transform-gpu opacity-100 z-50" sideOffset={18}>
                         Blog
                     </Tooltip.Content>
                 </Tooltip.Portal>
@@ -127,7 +127,7 @@ function ProjectsIcon() {
                     </svg>
                 </Tooltip.Trigger>
                 <Tooltip.Portal>
-                    <Tooltip.Content className="rounded-lg p-2 text-sm text-custom-text-gray dark:text-custom-text-lightgray leading-none bg-custom-nav-white dark:bg-custom-nav-gray shadow-lg select-none animate duration-400 ease-in-out transform-gpu opacity-100 z-10" sideOffset={18}>
+                    <Tooltip.Content className="rounded-lg p-2 text-sm text-custom-text-gray dark:text-custom-text-lightgray leading-none bg-custom-nav-white dark:bg-custom-nav-gray shadow-lg select-none animate duration-400 ease-in-out transform-gpu opacity-100 z-50" sideOffset={18}>
                         Projects
                     </Tooltip.Content>
                 </Tooltip.Portal>
