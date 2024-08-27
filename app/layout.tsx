@@ -22,16 +22,14 @@ export default function RootLayout({
     <html lang="en" >
       <body className={myFont.className}>
         <Providers>
-          <div className="max-w-7xl mx-auto min-h-screen lg:flex lg:justify-center lg:items-center">
-            <div className="flex">
-              {/* <Nav /> */}
-              <AnimatedTabs />
-              <div className="pointer-events-none fixed left-0 top-0 z-50 h-12 w-full bg-neutral-200 to-transparent backdrop-blur-xl [-webkit-mask-image:linear-gradient(to_bottom,black,transparent)] dark:bg-neutral-900"></div>
-              <main className="flex flex-col relative mx-auto mb-14 w-full max-w-screen-sm px-4 pb-8 pt-2 dark:text-white">
-                <Header />
-                {children}
-              </main>
-            </div>
+          <div className="relative flex flex-col w-screen mx-auto min-h-screen">
+            {/* <Nav /> */}
+            <div className="pointer-events-none fixed left-0 top-0 z-50 h-12 w-full bg-neutral-200 to-transparent backdrop-blur-xl [-webkit-mask-image:linear-gradient(to_bottom,black,transparent)] dark:bg-neutral-900"></div>
+            <main className="flex flex-col relative mx-auto mb-14 w-full max-w-screen-sm px-4 pb-8 pt-2 dark:text-white">
+              <Header />
+              {children}
+            </main>
+            <AnimatedTabs />
           </div>
         </Providers>
       </body>
