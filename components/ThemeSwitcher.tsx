@@ -28,7 +28,7 @@ export default function ThemeSwitch() {
                                 viewBox="0 0 24 24"
                                 fill="currentColor"
                                 stroke="currentColor"
-                                className="w-4 h-4 text-gray-800 dark:text-teal-500"
+                                className="w-4 h-4 text-teal-500"
                             >
                                 <path
                                     strokeLinecap="round"
@@ -43,7 +43,7 @@ export default function ThemeSwitch() {
                                 viewBox="0 0 24 24"
                                 fill="currentColor"
                                 stroke="currentColor"
-                                className="w-4 h-4 text-gray-800 dark:text-teal-500"
+                                className="w-4 h-4 text-gray-800"
                             >
                                 <path
                                     strokeLinecap="round"

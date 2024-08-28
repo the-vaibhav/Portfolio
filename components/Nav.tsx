@@ -7,51 +7,44 @@ import React from 'react';
 import "../styles/profilePic.css";
 import ThemeSwitch from './ThemeSwitcher';
 
+const TABS = [
+    { path: '/', name: 'Home', icon: <HomeIcon /> },
+    { path: '/about', name: 'About', icon: <AboutIcon /> },
+    { path: '/projects', name: 'Projects', icon: <ProjectsIcon /> },
+];
+
 export function AnimatedTabs() {
-    const pathname = usePathname();
-
-
-    const TABS = React.useMemo(() => [
-        { href: '/', label: 'Home', icon: <HomeIcon /> },
-        { href: '/about', label: 'About', icon: <AboutIcon /> },
-        { href: '/projects', label: 'Projects', icon: <ProjectsIcon /> },
-    ], []);
-
-
-
-    const isActive = React.useCallback(
-        (href: string) => pathname === href
-            ? 'text-teal-600 dark:text-teal-600'
-            : 'text-slate-400 hover:text-slate-500 dark:hover:text-slate-400 dark:text-slate-500',
-        [pathname]
-    );
+    let pathname = usePathname() || '/';
 
     return (
-        <div className="fixed inset-x-0 bottom-0 z-[1000] mb-4 flex h-12 justify-center px-6">
-            <div className="flex items-center rounded-xl border border-zinc-950/10 backdrop-filter backdrop-blur-lg p-2 shadow-[rgba(142,140,152,0.2)_0px_0px_30px,rgba(219,216,224,0.2)_0px_0px_0px_1px] dark:shadow-[rgba(111,109,120,0.1)_0px_0px_30px,rgba(60,57,63,0.4)_0px_0px_0px_1px]">
+        <div className="pointer-events-none fixed inset-x-0 bottom-0 z-50 mb-4 flex h-12 mx-auto px-6">
+            <div className="pointer-events-auto relative mx-auto flex items-center rounded-xl border border-zinc-950/10 backdrop-filter backdrop-blur-lg p-2 shadow-[rgba(142,140,152,0.2)_0px_0px_30px,rgba(219,216,224,0.2)_0px_0px_0px_1px] dark:shadow-[rgba(111,109,120,0.1)_0px_0px_30px,rgba(60,57,63,0.4)_0px_0px_0px_1px]">
                 <AnimatedBackground
-                    defaultValue={TABS.find(tab => tab.href === pathname)?.label}
+                    defaultValue={pathname}
                     className='rounded-lg bg-custom-nav-white dark:bg-custom-nav-gray'
                     transition={{
-                        type: 'spring',
-                        bounce: 0.2,
+                        type: "spring",
+                        bounce: 0.25,
+                        stiffness: 130,
+                        damping: 9,
                         duration: 0.3,
                     }}
                 >
                     {TABS.map((tab) => (
                         <Link
-                            href={tab.href}
-                            key={tab.label}
-                            data-id={tab.label}
-                            aria-label={tab.label} // Added for accessibility
-                            className={`inline-flex h-9 w-9 items-center justify-center transition-colors duration-100 focus-visible:outline-2 ${isActive(tab.href)}`}>
+                            href={tab.path}
+                            key={tab.path}
+                            data-id={tab.path}
+                            aria-label={tab.name} // Added for accessibility
+                            className={`inline-flex h-9 w-9 items-center justify-center transition-colors duration-100 focus-visible:outline-2 ${tab.path === pathname ? 'text-teal-600 dark:text-teal-600'
+                                : 'text-slate-400 hover:text-slate-500 dark:hover:text-slate-400 dark:text-slate-500'}`}>
                             {tab.icon}
                         </Link>
                     ))}
                 </AnimatedBackground>
                 <ThemeSwitch />
             </div>
-        </div >
+        </div>
     );
 }
 

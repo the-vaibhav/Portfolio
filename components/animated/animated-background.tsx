@@ -3,17 +3,17 @@ import { cn } from '@/lib/utils';
 import { AnimatePresence, Transition, motion } from 'framer-motion';
 import {
   Children,
-  cloneElement,
   ReactElement,
+  cloneElement,
   useEffect,
-  useState,
   useId,
+  useState,
 } from 'react';
 
 type AnimatedBackgroundProps = {
   children:
-    | ReactElement<{ 'data-id': string }>[]
-    | ReactElement<{ 'data-id': string }>;
+  | ReactElement<{ 'data-id': string }>[]
+  | ReactElement<{ 'data-id': string }>;
   defaultValue?: string;
   onValueChange?: (newActiveId: string | null) => void;
   className?: string;
@@ -51,12 +51,12 @@ export default function AnimatedBackground({
 
     const interactionProps = enableHover
       ? {
-          onMouseEnter: () => handleSetActiveId(id),
-          onMouseLeave: () => handleSetActiveId(null),
-        }
+        onMouseEnter: () => handleSetActiveId(id),
+        onMouseLeave: () => handleSetActiveId(null),
+      }
       : {
-          onClick: () => handleSetActiveId(id),
-        };
+        onClick: () => handleSetActiveId(id),
+      };
 
     return cloneElement(
       child,
@@ -84,7 +84,7 @@ export default function AnimatedBackground({
             />
           )}
         </AnimatePresence>
-        <span className='z-10'>{child.props.children}</span>
+        <span className='z-50'>{child.props.children}</span>
       </>
     );
   });
