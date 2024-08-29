@@ -15,7 +15,6 @@ const TABS = [
 
 export function AnimatedTabs() {
     let pathname = usePathname() || '/';
-    const [hoveredIndex, setHoveredIndex] = useState(null);
 
     return (
         <div className="pointer-events-none fixed inset-x-0 bottom-0 z-50 mb-4 flex h-12 mx-auto px-6">
