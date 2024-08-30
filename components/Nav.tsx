@@ -13,7 +13,7 @@ const TABS = [
     { path: '/projects', name: 'Projects', icon: <ProjectsIcon /> },
 ];
 
-export function AnimatedTabs() {
+export function Navbar() {
     let pathname = usePathname() || '/';
 
     return (

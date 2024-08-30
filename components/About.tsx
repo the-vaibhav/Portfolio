@@ -1,5 +1,5 @@
 import "../styles/profilePic.css";
-import TextDecodeAnimation from "./DecodeText";
+import TextDecodeAnimation from "./animated/DecodeText";
 
 export default function About() {
     return <div className="static max-w-[700px] z-20">
