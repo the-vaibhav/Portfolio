@@ -33,7 +33,7 @@ export function Navbar() {
                                 </Link>
                             </Tooltip.Trigger>
                             <Tooltip.Portal>
-                                <Tooltip.Content data-state="delayed-open" className="rounded-lg p-2 text-sm text-custom-text-gray dark:text-custom-text-lightgray leading-none bg-custom-nav-white dark:bg-custom-nav-gray shadow-lg select-none animate duration-400 ease-in-out transform-gpu opacity-100 z-50" sideOffset={12}>
+                                <Tooltip.Content sticky="always" hideWhenDetached={false} data-state="delayed-open" className="rounded-lg p-2 text-sm text-custom-text-gray dark:text-custom-text-lightgray leading-none bg-custom-nav-white dark:bg-custom-nav-gray shadow-lg select-none animate duration-400 ease-in-out transform-gpu opacity-100 z-50" sideOffset={12}>
                                     {tab.name}
                                 </Tooltip.Content>
                             </Tooltip.Portal>
