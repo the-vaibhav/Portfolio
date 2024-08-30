@@ -1,5 +1,4 @@
 "use client"
-import AnimatedBackground from '@/components/animated/animated-background';
 import * as Tooltip from '@radix-ui/react-tooltip';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -16,21 +15,12 @@ const TABS = [
 export function Navbar() {
     let pathname = usePathname() || '/';
 
-    const [openTooltipIndex, setOpenTooltipIndex] = useState<number | null>(null);
-
-    const handleTooltipClick = (index: number) => {
-        if (openTooltipIndex === index) {
-            setOpenTooltipIndex(null); // Close tooltip if already open
-        } else {
-            setOpenTooltipIndex(index); // Open the clicked tooltip
-        }
-    };
     return (
         <div className="pointer-events-none fixed inset-x-0 bottom-0 z-50 mb-4 flex h-12 mx-auto px-6">
             <div className="pointer-events-auto relative mx-auto flex items-center rounded-xl border border-zinc-950/10 backdrop-filter backdrop-blur-lg p-2 shadow-[rgba(142,140,152,0.2)_0px_0px_30px,rgba(219,216,224,0.2)_0px_0px_0px_1px] dark:shadow-[rgba(111,109,120,0.1)_0px_0px_30px,rgba(60,57,63,0.4)_0px_0px_0px_1px]">
                 {TABS.map((tab, index) => (
                     <Tooltip.Provider key={index} delayDuration={0}>
-                        <Tooltip.Root open={openTooltipIndex === index} onOpenChange={(open) => open ? handleTooltipClick(index) : setOpenTooltipIndex(null)}>
+                        <Tooltip.Root>
                             <Tooltip.Trigger asChild>
                                 <Link
                                     href={tab.path}
@@ -43,7 +33,7 @@ export function Navbar() {
                                 </Link>
                             </Tooltip.Trigger>
                             <Tooltip.Portal>
-                                <Tooltip.Content className="rounded-lg p-2 text-sm text-custom-text-gray dark:text-custom-text-lightgray leading-none bg-custom-nav-white dark:bg-custom-nav-gray shadow-lg select-none animate duration-400 ease-in-out transform-gpu opacity-100 z-50" sideOffset={12}>
+                                <Tooltip.Content data-state="delayed-open" className="rounded-lg p-2 text-sm text-custom-text-gray dark:text-custom-text-lightgray leading-none bg-custom-nav-white dark:bg-custom-nav-gray shadow-lg select-none animate duration-400 ease-in-out transform-gpu opacity-100 z-50" sideOffset={12}>
                                     {tab.name}
                                 </Tooltip.Content>
                             </Tooltip.Portal>
