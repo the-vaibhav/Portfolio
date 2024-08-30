@@ -14,28 +14,23 @@ const TABS = [
 
 export function Navbar() {
     let pathname = usePathname() || '/';
+
     const [activeTooltip, setActiveTooltip] = useState(null);
     const [isMobile, setIsMobile] = useState(false);
 
-    // Listen for window resize events to detect mobile/desktop
     useEffect(() => {
+        // Update the state to the actual window width when client-side rendering
+        setIsMobile(window.innerWidth <= 768);
+
         const handleResize = () => {
             setIsMobile(window.innerWidth <= 768);
         };
 
-        // Check if window is defined (i.e., we're in a browser)
-        if (typeof window !== 'undefined') {
-            setIsMobile(window.innerWidth <= 768);
-            window.addEventListener('resize', handleResize);
-        }
-
+        window.addEventListener('resize', handleResize);
         return () => {
-            if (typeof window !== 'undefined') {
-                window.removeEventListener('resize', handleResize);
-            }
+            window.removeEventListener('resize', handleResize);
         };
     }, []);
-
 
     const handleTooltipClick = (index: any) => {
         setActiveTooltip(index);
@@ -43,6 +38,7 @@ export function Navbar() {
             setActiveTooltip(null);
         }, 2000); // Hide after 2 seconds
     };
+
 
     return (
         <div className="pointer-events-none fixed inset-x-0 bottom-0 z-50 mb-4 flex h-12 mx-auto px-6">
