@@ -1,5 +1,4 @@
 "use client"
-import AnimatedBackground from '@/components/animated/animated-background';
 import * as Tooltip from '@radix-ui/react-tooltip';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -16,7 +15,7 @@ const TABS = [
 export function Navbar() {
     let pathname = usePathname() || '/';
     const [activeTooltip, setActiveTooltip] = useState(null);
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+    const [isMobile, setIsMobile] = useState(false);
 
     // Listen for window resize events to detect mobile/desktop
     useEffect(() => {
@@ -24,18 +23,18 @@ export function Navbar() {
             setIsMobile(window.innerWidth <= 768);
         };
 
-        window.addEventListener('resize', handleResize);
+        // Check if window is defined (i.e., we're in a browser)
+        if (typeof window !== 'undefined') {
+            setIsMobile(window.innerWidth <= 768);
+            window.addEventListener('resize', handleResize);
+        }
+
         return () => {
-            window.removeEventListener('resize', handleResize);
+            if (typeof window !== 'undefined') {
+                window.removeEventListener('resize', handleResize);
+            }
         };
     }, []);
-
-    const handleTooltipClick = (index: any) => {
-        setActiveTooltip(index);
-        setTimeout(() => {
-            setActiveTooltip(null);
-        }, 2000); // Hide after 2 seconds
-    };
 
     return (
         <div className="pointer-events-none fixed inset-x-0 bottom-0 z-50 mb-4 flex h-12 mx-auto px-6">
