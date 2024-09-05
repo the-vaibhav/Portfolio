@@ -1,5 +1,4 @@
 import "../styles/profilePic.css";
-import TextDecodeAnimation from "./animated/DecodeText";
 import { Typewriter } from "./animated/typewriter";
 
 export default function About() {
@@ -8,10 +7,10 @@ export default function About() {
             <p className="border rounded-lg text-center  text-black bg-white bg-opacity-40 dark:text-white dark:bg-white dark:bg-opacity-10 p-3 mb-6">Hello, I&apos;m a Software Developer Based in India</p>
         </div>
         <div className="flex flex-col md:flex-row items-center">
-            <div className="md:w-1/2">
+            <div className="md:w-1/2 lg:mr-6">
                 <div className="text-center">
-                    <Typewriter className="text-4xl font-bold tracking-wide" texts={["वैभव म्हस्के", "Vaibhav Mhaske"]} />
-                    <span className="inline-block animate-blink text-4xl font-normal text-black/40 dark:text-white/40 motion-reduce:hidden pl-1">
+                    <Typewriter onStop={true} className="text-4xl font-bold tracking-wide" texts={["वैभव म्हस्के", "Vaibhav Mhaske"]} />
+                    <span className="inline-block animate-blink text-4xl font-normal text-black/40 dark:text-white/40 motion-reduce:hidden">
                         |
                     </span>
                 </div>

@@ -1,4 +1,3 @@
-
 "use client";
 import { animate, motion, useMotionValue, useTransform } from "framer-motion";
 import { useEffect, useState } from "react";
@@ -6,9 +5,13 @@ import { useEffect, useState } from "react";
 export function Typewriter({
     texts,
     className,
+    onStop,
+    delay = 0.5
 }: {
     texts: string[];
     className?: string;
+    onStop?: boolean;
+    delay?: number;
 }) {
     const [currentTextIndex, setCurrentTextIndex] = useState(0);
     const [isAnimatingBackward, setIsAnimatingBackward] = useState(false);
@@ -22,19 +25,23 @@ export function Typewriter({
 
         const control = animate(value, isAnimatingBackward ? 0 : length, {
             duration: animationDuration,
-            delay: 0.5,
+            delay: delay,
             onComplete: () => {
-                if (!isAnimatingBackward) {
-                    setIsAnimatingBackward(true);
+                if (onStop && currentTextIndex === 1) {
+                    control.stop();
                 } else {
-                    setIsAnimatingBackward(false);
-                    setCurrentTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
+                    if (!isAnimatingBackward) {
+                        setIsAnimatingBackward(true);
+                    } else {
+                        setIsAnimatingBackward(false);
+                        setCurrentTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
+                    }
                 }
             },
         });
 
         return control.stop;
-    }, [currentTextIndex, isAnimatingBackward]);
+    }, [currentTextIndex, isAnimatingBackward, onStop]);
 
     return <motion.span className={className}>{textToRender}</motion.span>;
 }
