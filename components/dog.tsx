@@ -3,7 +3,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import * as THREE from 'three'; // Create a DRACOLoader instance and set the decoder path
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { loadGLTFModel } from "../lib/model";
-import { DogContainer, DogSpinner } from "./voxel-dog-loader";
+import { DogContainer, DogSpinner } from "./dog-loader";
 
 function easeOutCirc(x: number) {
     return Math.sqrt(1 - Math.pow(x - 1, 4));

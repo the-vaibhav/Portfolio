@@ -1,5 +1,6 @@
 import "../styles/profilePic.css";
 import TextDecodeAnimation from "./animated/DecodeText";
+import { Typewriter } from "./animated/typewriter";
 
 export default function About() {
     return <div className="static max-w-[700px] z-20">
@@ -8,7 +9,12 @@ export default function About() {
         </div>
         <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2">
-                <TextDecodeAnimation time={150} hindiText="वैभव म्हस्के" englishText="Vaibhav Mhaske" style="text-4xl text-center font-bold tracking-wide" />
+                <div className="text-center">
+                    <Typewriter className="text-4xl font-bold tracking-wide" texts={["वैभव म्हस्के", "Vaibhav Mhaske"]} />
+                    <span className="inline-block animate-blink text-4xl font-normal text-black/40 dark:text-white/40 motion-reduce:hidden pl-1">
+                        |
+                    </span>
+                </div>
                 <p className="text-center text-custom-text-gray dark:text-custom-text-lightgray">Digital Craftman ( Developer / Gamer )</p>
             </div>
             <div className="home__img w-[120px] h-[120px] md:w-[150px] md:h-[150px] mt-5 md:mt-0">
