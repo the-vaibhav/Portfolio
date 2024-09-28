@@ -3,9 +3,9 @@ import * as Tooltip from '@radix-ui/react-tooltip';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React, { useState } from 'react';
+import { div } from 'three/examples/jsm/nodes/Nodes.js';
 import "../styles/profilePic.css";
 import ThemeSwitch from './ThemeSwitcher';
-
 const TABS = [
     { path: '/', name: 'Home', icon: <HomeIcon /> },
     { path: '/about', name: 'About', icon: <AboutIcon /> },
@@ -34,7 +34,7 @@ export function Navbar() {
                             </Tooltip.Trigger>
                             <Tooltip.Portal>
                                 <Tooltip.Content sticky="always" hideWhenDetached={false} data-state="delayed-open" className="rounded-lg p-2 text-sm text-custom-text-gray dark:text-custom-text-lightgray leading-none bg-custom-nav-white dark:bg-custom-nav-gray shadow-lg select-none animate duration-400 ease-in-out transform-gpu opacity-100 z-50" sideOffset={12}>
-                                    {tab.name}
+                                    <span className="block">{tab.name}</span>
                                 </Tooltip.Content>
                             </Tooltip.Portal>
                         </Tooltip.Root>
